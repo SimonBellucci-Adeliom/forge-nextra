@@ -1,0 +1,82 @@
+import { Callout } from "nextra/components";
+import { Steps, Tab, Tabs } from "nextra-theme-docs";
+import { CodeEditor } from "../../components/CodeEditor";
+
+# Titre 1
+
+Nostrud ut incididunt velit elit quis consequat ipsum elit nisi proident. Aliqua nisi qui magna sit. In Lorem labore est anim officia velit irure. Eu consequat amet ad nulla quis ea ad nulla irure irure veniam qui labore consectetur. Ea eiusmod pariatur ex enim. Pariatur consequat ullamco cillum ipsum reprehenderit. Id in ex nulla id tempor aute culpa ad laborum pariatur.
+
+Cupidatat labore do incididunt nisi dolor ut reprehenderit enim id dolore do nisi. Sunt quis consectetur enim qui culpa culpa laborum minim ad duis labore laborum. Exercitation aliqua commodo ut voluptate exercitation. Occaecat fugiat minim voluptate sunt reprehenderit id nostrud pariatur labore aliqua id aute proident nulla. Nulla eiusmod magna adipisicing ipsum et non.
+
+<Callout emoji="👾">
+  **Callout** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</Callout>
+
+## Titre 2
+
+Duis eiusmod quis nisi incididunt aute aliqua laborum duis fugiat elit qui cillum. Officia in Lorem est aliquip et enim. Do laborum Lorem et excepteur non commodo culpa labore voluptate quis. Ea proident qui sunt consectetur enim cillum amet est officia officia laborum.
+
+| left   | center | right |
+| :----- | :----: | ----: |
+| foo    |  bar   |   baz |
+| banana | apple  |  kiwi |
+
+### Titre 3
+
+Do nostrud officia ad eiusmod ad aute minim tempor ea nisi exercitation. Eu qui cillum sunt labore laboris nostrud culpa elit excepteur est in. Proident do exercitation voluptate nostrud nostrud.
+
+<Steps>
+
+    #### Step 1
+
+    Contents for step 1.
+
+    #### Step 2
+
+    Contents for step 2.
+
+</Steps>
+
+#### Titre 4
+
+Duis sunt dolore excepteur enim ullamco deserunt dolore fugiat. Ad velit sunt ad laboris mollit fugiat minim nostrud dolore nostrud amet incididunt. Irure aliqua ipsum qui aliquip consectetur cupidatat. Occaecat quis elit nostrud ex ut minim culpa. Commodo sint mollit consequat tempor reprehenderit mollit consequat enim incididunt aliquip proident. Anim exercitation ullamco amet non exercitation deserunt. Fugiat aliqua velit officia officia ullamco duis do cillum.
+
+<Tabs items={["pnpm", "npm", "yarn"]}>
+  <Tab>**pnpm**: Fast, disk space efficient package manager.</Tab>
+  <Tab>
+    **npm** is a package manager for the JavaScript programming language.
+  </Tab>
+  <Tab>**Yarn** is a software packaging system.</Tab>
+</Tabs>
+
+#### Titre 4
+
+```js /useState/
+import { useState } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0);
+  return <button onClick={() => setCount(count + 1)}>{count}</button>;
+}
+```
+
+<CodeEditor
+  template="react-ts"
+  files={{
+"/App.tsx": `import { useState, FunctionComponent } from "react";
+
+const Counter: FunctionComponent = () => {
+const [count, setCount] = useState(0);
+return <button onClick={() => setCount(count + 1)}>{count}</button>;
+}
+
+export default function App() {
+
+return (
+
+<div>
+  <h1>Hello Sandpack</h1>
+  <Counter />
+</div>
+) }`, }} />

@@ -2,8 +2,13 @@
   "index": "Introduction",
   "another": "Another Page",
   "advanced": "Advanced (A Folder)",
+  "forge": "La Forge",
   "about": {
     "title": "About",
+    "type": "page"
+  },
+  "menu": {
+    "title": "Page de menu",
     "type": "page"
   },
   "contact": {
